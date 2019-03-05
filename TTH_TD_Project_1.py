@@ -54,9 +54,9 @@ def start_game():
                 else:
                     print("It took you {} tries.".format(len(num_of_player_guesses)))
 
-                while not play_again == 'y'or not play_again == 'n':
+                while not play_again == 'y' or not play_again == 'n':
                     
-                    play_again = input("Would you like to play again? (Enter Yes/No): ")
+                    play_again = input("Would you like to play again? (Enter Yes/No): ").lower()
 
                     if play_again == "":
                         continue
